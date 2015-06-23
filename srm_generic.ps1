@@ -4,7 +4,7 @@
 
 # Connect to protected site VC & SRM
 $creds = Get-Credential
-$vca = Connect-VIServer 10.112.35.255 -Credential $creds
+$vca = Connect-VIServer <VC_IP> -Credential $creds
 $srma = Connect-SrmServer -Server $vca -Credential $creds -RemoteCredential $creds
 
 # Output Current SRM Configuration Report
